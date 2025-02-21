@@ -29,6 +29,7 @@
 		84C5065628C94ED3007CE8FF /* Hypervisor.h in Headers */ = {isa = PBXBuildFile; fileRef = 84C5064628C94ED3007CE8FF /* Hypervisor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84C5065828C9506F007CE8FF /* Hypervisor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C505B928C944C8007CE8FF /* Hypervisor.framework */; };
 		84C5065928C9506F007CE8FF /* Hypervisor.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84C505B928C944C8007CE8FF /* Hypervisor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE0D00A02D67FC4E00FD3278 /* hv_sme_config.h in Headers */ = {isa = PBXBuildFile; fileRef = CE0D009F2D67FC4E00FD3278 /* hv_sme_config.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE329FA32CAD1556005841DD /* hv_gic_state.h in Headers */ = {isa = PBXBuildFile; fileRef = CE329FA12CAD1556005841DD /* hv_gic_state.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE329FA42CAD1556005841DD /* hv_gic_parameters.h in Headers */ = {isa = PBXBuildFile; fileRef = CE329FA02CAD1556005841DD /* hv_gic_parameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE329FA52CAD1556005841DD /* hv_gic_types.h in Headers */ = {isa = PBXBuildFile; fileRef = CE329FA22CAD1556005841DD /* hv_gic_types.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -94,11 +95,12 @@
 		84C5064528C94ED3007CE8FF /* hv_arch_vmx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hv_arch_vmx.h; path = "$(DERIVED_FILE_DIR)/Headers/hv_arch_vmx.h"; sourceTree = "<group>"; };
 		84C5064628C94ED3007CE8FF /* Hypervisor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hypervisor.h; path = "$(DERIVED_FILE_DIR)/Headers/Hypervisor.h"; sourceTree = "<group>"; };
 		84C5068128C9591A007CE8FF /* hv.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = hv.entitlements; sourceTree = "<group>"; };
-		CE329F9E2CAD1556005841DD /* hv_gic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = hv_gic.h; path = "$(DERIVED_FILE_DIR)/Headers/hv_gic.h"; sourceTree = DEVELOPER_DIR; };
-		CE329F9F2CAD1556005841DD /* hv_gic_config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = hv_gic_config.h; path = "$(DERIVED_FILE_DIR)/Headers/hv_gic_config.h"; sourceTree = DEVELOPER_DIR; };
-		CE329FA02CAD1556005841DD /* hv_gic_parameters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = hv_gic_parameters.h; path = "$(DERIVED_FILE_DIR)/Headers/hv_gic_parameters.h"; sourceTree = DEVELOPER_DIR; };
-		CE329FA12CAD1556005841DD /* hv_gic_state.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = hv_gic_state.h; path = "$(DERIVED_FILE_DIR)/Headers/hv_gic_state.h"; sourceTree = DEVELOPER_DIR; };
-		CE329FA22CAD1556005841DD /* hv_gic_types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = hv_gic_types.h; path = "$(DERIVED_FILE_DIR)/Headers/hv_gic_types.h"; sourceTree = DEVELOPER_DIR; };
+		CE0D009F2D67FC4E00FD3278 /* hv_sme_config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = hv_sme_config.h; path = "$(DERIVED_FILE_DIR)/Headers/hv_sme_config.h"; sourceTree = "<group>"; };
+		CE329F9E2CAD1556005841DD /* hv_gic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = hv_gic.h; path = "$(DERIVED_FILE_DIR)/Headers/hv_gic.h"; sourceTree = "<group>"; };
+		CE329F9F2CAD1556005841DD /* hv_gic_config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = hv_gic_config.h; path = "$(DERIVED_FILE_DIR)/Headers/hv_gic_config.h"; sourceTree = "<group>"; };
+		CE329FA02CAD1556005841DD /* hv_gic_parameters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = hv_gic_parameters.h; path = "$(DERIVED_FILE_DIR)/Headers/hv_gic_parameters.h"; sourceTree = "<group>"; };
+		CE329FA12CAD1556005841DD /* hv_gic_state.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = hv_gic_state.h; path = "$(DERIVED_FILE_DIR)/Headers/hv_gic_state.h"; sourceTree = "<group>"; };
+		CE329FA22CAD1556005841DD /* hv_gic_types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = hv_gic_types.h; path = "$(DERIVED_FILE_DIR)/Headers/hv_gic_types.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 		84C5062528C94E9D007CE8FF /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				CE0D009F2D67FC4E00FD3278 /* hv_sme_config.h */,
 				CE329F9E2CAD1556005841DD /* hv_gic.h */,
 				CE329F9F2CAD1556005841DD /* hv_gic_config.h */,
 				CE329FA02CAD1556005841DD /* hv_gic_parameters.h */,
@@ -214,6 +217,7 @@
 				84C5065128C94ED3007CE8FF /* hv_vcpu_types.h in Headers */,
 				84C5065628C94ED3007CE8FF /* Hypervisor.h in Headers */,
 				84C5065228C94ED3007CE8FF /* hv_vcpu_config.h in Headers */,
+				CE0D00A02D67FC4E00FD3278 /* hv_sme_config.h in Headers */,
 				84C5065028C94ED3007CE8FF /* hv_vm_types.h in Headers */,
 				84C505C928C94540007CE8FF /* sysreg_offsets.h in Headers */,
 				84C505C828C94540007CE8FF /* hv_kernel_structs.h in Headers */,
